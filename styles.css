@@ -1,1 +1,20 @@
-/* Пиши стили тут */
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+}
+  
+  input[type="checkbox"] {
+    display: none;
+  }
+  
+  label {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background-image: url('img/star-empty.png');
+    background-size: cover;
+  }
+  
+  input[type="checkbox"]:hover ~ label {
+    background-image: url('img/star.png');
+  }
